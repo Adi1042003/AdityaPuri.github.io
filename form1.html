@@ -11,25 +11,24 @@
 <label class="switch" for="username"></label>
         <div class="box">
                 <div id="upperbox">
-                 <strong><pre style="color: white; display: flex; justify-content: center;position: relative; top: 30%; font-size: 20px;padding: 0px;margin: 0px; font-weight: 50px; font-family: sans-serif">
-     Creating email
-templates has never
-       been easier.</pre></strong> 
+                    <p class="namepage">Welcome to my login page: <br>
                 </div>
                 <div id="gap">
                   <pre style="  display: flex; justify-content: center; position: relative; bottom: 30px;; padding: 0px;margin: 0px; font-size: 15px;"> how are u doing now a days hope ur 
              doing good
                   </pre>
-                  <img style=" display: flex; justify-content: center;" src="http://drive.google.com/uc?export=view&id=1SQ0ff2qYQOwUQaGGXr_3ZDpDY3f_KBU5" alt="lost in burette love">
+                  <img id="adityapic" style=" display: flex; justify-content: center;" src="http://drive.google.com/uc?export=view&id=1SQ0ff2qYQOwUQaGGXr_3ZDpDY3f_KBU5" alt="lost in burette love">
                  <strong><p style=" display: flex; justify-content: center;" id="aditya">Aditya Puri</p></strong> 
                 </div>
                 <form>
-                  <div class="inputBox">
-                    <input style="position: relative;left: -20px; width: 210px;" type="email" id="emailid" name="email" required 
-                     onkeyup="this.setAttribute('value', this.value);" value="" >
-                    <label>Email Address</label>
-                  </div>
+              <div style="display:inline; justify-content: center;">
+                   <div class="inputBox">
+                      <input style="position: relative;left: -20px; width: 210px;" type="email" id="emailid" name="email" required 
+                          onkeyup="this.setAttribute('value', this.value);" value="" >
+                      <label>Email Address</label>
+                   </div>
                   <input style="position: relative; top: -70px;right: -15px;" type="submit" name="Subscribe" value="Subscribe" onclick="msg()">
+              </div>
                   <div>
                   <a href="https://www.linkedin.com/in/aditya-puri-268251245"><svg id="linkedIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="39" height="39" focusable="false">
                     <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
@@ -46,23 +45,25 @@ templates has never
 </body>
 </html>
 <style>
-  #som{
+  #som{       /*twitter*/
     width: 40px;
     height: 70px;
-    top: 20px;
-    left: 60px;
+    position: relative;
+    top:15px;
+    left: 53px;
     margin: 0px;
     padding: 0px;
   }
-  #insta{
+  #insta{        /*instagram*/
+    height: 50px;
     width: 80px;
     position: relative;
-    top: 10px;
-    left: 12%;
+    top: 6px;
+    left: 11%;
     padding: 0px;
     margin: 0px;
   }
-  #linkedIn{
+  #linkedIn{    /*linkedIn*/
     color: rgb(10, 102, 194);
     position: relative;
     left: 7px;
@@ -79,15 +80,15 @@ templates has never
     padding: 0px;
     background-color:black;
   }
-  img{
+  #adityapic{
     height: 55px;
     width: 55px;
     position: relative;
     top: -30px;
     left: 42%;
     border-radius: 50%;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
   }
   #aditya{
     position: relative;
@@ -102,12 +103,40 @@ templates has never
     width: 25rem;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    background-color: rgb(35, 85, 242);
-    background-image: url('http://drive.google.com/uc?export=view&id=1KzB_beNVbpl7t27K9ZVITWlS8wB28cif');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
     position: relative;
     right: 12.9%;
     top: -61px;
   }
+  
+  .namepage {
+  font-weight: 700;
+  text-align: center;
+  font-size: 40px;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
   .box {
     position: absolute;
     top: 50%;
@@ -120,7 +149,15 @@ templates has never
     -webkit-border-radius: 8px;
     border-radius: 8px;
     background-color: white;
+    -webkit-box-shadow: 0px 0px 300px -23px rgba(240,9,240,1);
+    -moz-box-shadow: 0px 0px 300px -23px rgba(240,9,240,1);
+    box-shadow: 0px 0px 300px -23px rgba(240,9,240,1);
   }
+  /* .box:hover{
+    -webkit-box-shadow: 0px 0px 300px -23px rgba(240,9,240,1);
+    -moz-box-shadow: 0px 0px 300px -23px rgba(240,9,240,1);
+    box-shadow: 0px 0px 300px -23px rgba(240,9,240,1);
+  } */
   .box .inputBox {
     position: relative;
   }
@@ -201,7 +238,7 @@ templates has never
     width: 50px;
     height: 25px;
     border-radius: 20px;
-    background: #dfd9ea;
+    background: hsl(349, 95%, 78%);
     transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     vertical-align: middle;
     cursor: pointer;
@@ -224,7 +261,6 @@ templates has never
 }
 input:checked + .switch {
     background: black;
-    
 }
 input:checked + .switch::before {
     left: 27px;
@@ -236,7 +272,6 @@ input:checked + .switch:active::before {
 }
 </style>
 <script>
- 
   function msg() {
   var str0 = document.getElementById("emailid").value;
   var str1 = str0.replace("@gmail.com","");
@@ -250,8 +285,7 @@ input:checked + .switch:active::before {
     alert(str3);
   }}
   const toggleButton = document.getElementById('dark-mode-toggle');
-username.addEventListener('click', () => {
+  username.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 });
-
 </script>
