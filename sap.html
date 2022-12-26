@@ -12,24 +12,17 @@
 </head>
 <body >
     
-<!doctype html>
-<html lang="en">
-<head>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="icon" href="img/favicon.png" type="image/png">
-<title>MeetMe Personal</title>
-
 <script nonce="1b44a17f-823a-4bf6-bc3b-6e73937ef1c9">(function(w,d){!function(eK,eL,eM,eN){eK.zarazData=eK.zarazData||{};eK.zarazData.executed=[];eK.zaraz={deferred:[],listeners:[]};eK.zaraz.q=[];eK.zaraz._f=function(eO){return function(){var eP=Array.prototype.slice.call(arguments);eK.zaraz.q.push({m:eO,a:eP})}};for(const eQ of["track","set","debug"])eK.zaraz[eQ]=eK.zaraz._f(eQ);eK.zaraz.init=()=>{var eR=eL.getElementsByTagName(eN)[0],eS=eL.createElement(eN),eT=eL.getElementsByTagName("title")[0];eT&&(eK.zarazData.t=eL.getElementsByTagName("title")[0].text);eK.zarazData.x=Math.random();eK.zarazData.w=eK.screen.width;eK.zarazData.h=eK.screen.height;eK.zarazData.j=eK.innerHeight;eK.zarazData.e=eK.innerWidth;eK.zarazData.l=eK.location.href;eK.zarazData.r=eL.referrer;eK.zarazData.k=eK.screen.colorDepth;eK.zarazData.n=eL.characterSet;eK.zarazData.o=(new Date).getTimezoneOffset();if(eK.dataLayer)for(const eX of Object.entries(Object.entries(dataLayer).reduce(((eY,eZ)=>({...eY[1],...eZ[1]})))))zaraz.set(eX[0],eX[1],{scope:"page"});eK.zarazData.q=[];for(;eK.zaraz.q.length;){const e_=eK.zaraz.q.shift();eK.zarazData.q.push(e_)}eS.defer=!0;for(const fa of[localStorage,sessionStorage])Object.keys(fa||{}).filter((fc=>fc.startsWith("_zaraz_"))).forEach((fb=>{try{eK.zarazData["z_"+fb.slice(7)]=JSON.parse(fa.getItem(fb))}catch{eK.zarazData["z_"+fb.slice(7)]=fa.getItem(fb)}}));eS.referrerPolicy="origin";eS.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(eK.zarazData)));eR.parentNode.insertBefore(eS,eR)};["complete","interactive"].includes(eL.readyState)?zaraz.init():eK.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,0,"script");})(window,document);</script></head>
-<body>
 
-<header class="header_area">
-<div class="main_menu">
+
+<header class="header_area" style="position: sticky; position: -webkit-sticky; top:0px;background-color: hsl(220, 100%, 75%); height: 90px;">
+<div class="main_menu" >
 <nav class="navbar navbar-expand-lg navbar-light">
 <div class="container box_1620">
 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 <ul class="nav navbar-nav menu_nav ml-auto">
+<li style="position: relative; left: -139%;"><input type="checkbox" hidden="hidden" id="username">
+<label class="switch" for="username"></label></li>   
 <li class="nav-item active"><a class="nav-link" href="https://adi1042003.github.io/AdityaPuri/form1">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="#aboutme1">About</a></li>
 <li class="nav-item"><a class="nav-link" href="#myprojectsre">My Projects</a></li>
@@ -120,7 +113,7 @@
 <div class="row welcome_inner">
 <div class="col-lg-6">
 <div class="welcome_text">
-<h4 >About Myself</h4>
+<h4 id="colorchange2" >About Myself</h4>
 <p>I am an ELECTRONICS AND COMMUNICATION ENGINEER, I am currently studying at the GOGTE INSTITUTE OF TECHNOLOGY, BELGAUM. I completed my PUC from GOVIND RAM SEKSARIA SCIENCE COLLEGE, BELAGAVI. And I completed my schooling at SANT MEERA ENGLISH MEDIUM SCHOOL, BELGAUM.</p>
 <div id="edu1" class="row">
 <div class="col-md-4">
@@ -132,7 +125,7 @@
     state="loop"
     style="width:35px;height:35px">
 </lord-icon>
-<a href="https://schools.org.in/belagavi/29010300503/sant-meera-english-medium-high-school-anagol.html"><h4>1-10 TH</h4></a>
+<a href="https://schools.org.in/belagavi/29010300503/sant-meera-english-medium-high-school-anagol.html"><h4 id="colorchange3">1-10 TH</h4></a>
 <p>SCHOOL</p>
 </div>
 </div>
@@ -145,7 +138,7 @@
     state="loop"
     style="width:35px;height:35px">
 </lord-icon>
-<a href="https://pu.gssbgm.edu.in/"><h4>PU1 & PU2</h4>
+<a href="https://pu.gssbgm.edu.in/"><h4 id="colorchange4">PU1 & PU2</h4>
 <p>PUC</p></a>
 </div>
 </div>
@@ -157,8 +150,8 @@
     colors="primary:#4be1ec,secondary:#cb5eee"
     state="loop"
     style="width:35px;height:35px">
-</lord-icon><a href="https://www.git.edu/"><h4>3rd sem</h4>
-<p>ENGINEERING</p></a>
+</lord-icon><a href="https://www.git.edu/"><h4 id="colorchange5">3rd sem</h4>
+<p >ENGINEERING</p></a>
 </div>
 </div>
 </div>
@@ -221,7 +214,7 @@
 <section id="myprojectsre" class="home_gallery_area p_120">
 <div class="container">
 <div class="main_title">
-<h2>My projects </h2>
+<h2 id="colorchange6">My projects </h2>
 <p>I am in extremely love with electronics and Computer science</p>
 </div>
 <div class="isotope_fillter">
@@ -379,9 +372,10 @@ Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/clou
 </script>
 </body>
 </html>
-</body>
-</html>
 <style>
+  #colorchange2,#colorchange3,#colorchange4,#colorchange5,#colorchange6:hover{
+    color:hsl(244, 100%, 71%);
+  }
   #shadow:hover{
     -webkit-box-shadow: 0px 0px 15px 4px rgba(209,71,209,1);
 -moz-box-shadow: 0px 0px 15px 4px rgba(209,71,209,1);
@@ -471,7 +465,49 @@ nav,
 section {
     display: block
 }
-
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.switch {
+    display: flex;
+    position: relative;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    background: lightblue;
+    transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    vertical-align: middle;
+    cursor: pointer;
+}
+.switch::before {
+    display: flex;
+    justify-content: center;
+    content: 'W';
+    position: relative;
+    top: 1px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    background: #fafafa;
+    color: aqua;
+    border-radius: 50%;
+    transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.switch:active::before {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(128,128,128,0.1);
+}
+input:checked + .switch {
+    background: black;
+}
+input:checked + .switch::before {
+    left: 27px;
+    background: #fff;
+    content: 'T';
+}
+input:checked + .switch:active::before {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(0,150,136,0.2);
+}
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -480,7 +516,7 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff
+    background-color:white;  
 }
 
 [tabindex="-1"]:focus {
@@ -18087,6 +18123,10 @@ h6 {
 
 </style>
 <script>
+    const toggleButton = document.getElementById('dark-mode-toggle');
+  username.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
     (function(){/*
 
 Copyright The Closure Library Authors.
